@@ -196,7 +196,7 @@ body{
   font-family:'Cormorant Garamond',serif;
   font-style:italic;font-size:0.85rem;color:var(--muted);margin-bottom:20px;
 }
-.footer-logo{width:90px;height:90px;border-radius:50%;margin:0 auto;opacity:0.7}
+.footer-logo{width:120px;height:120px;border-radius:50%;margin:0 auto;opacity:0.75}
 .footer-logo img{width:100%;border-radius:50%}
 .footer-brand{
   font-family:'Cormorant Garamond',serif;
@@ -274,7 +274,7 @@ img{
     <div class="cover-label">Wedding Invitation</div>
     <div class="cover-names">Te <em>&</em> Meng</div>
     <div class="cover-date">2026 &middot; 06 &middot; 06</div>
-    <div class="cover-time">18:00</div>
+    <div class="cover-time">17:00</div>
     <div class="cover-scroll">&#8964;</div>
   </div>
 </div>
@@ -333,7 +333,7 @@ img{
       <div>
         <h3>Date & Time / 日期与时间</h3>
         <p>2026年6月6日 星期六<br>Saturday, June 6, 2026</p>
-        <p style="margin-top:8px">18:00 正式开始<br><span class="sub">会场 17:45 开放入场 Doors open at 17:45</span></p>
+        <p style="margin-top:8px">17:00 正式开始<br><span class="sub">会场 16:50 开放入场 Doors open at 16:50</span></p>
       </div>
     </div>
     <div class="info-card reveal reveal-d1">
@@ -357,8 +357,8 @@ img{
   <div class="section-title-en reveal reveal-d2">Kind Reminder</div>
   <div class="notes-box reveal reveal-d3">
     <p>诚邀您出席我们的婚礼晚宴。<br><span style="color:var(--muted);font-size:0.8rem">You are cordially invited to our wedding banquet.</span></p>
-    <p>请准时到达，会场大门将于 <span class="hl">17:45</span> 开放。<br><span style="color:var(--muted);font-size:0.8rem">Please arrive on time. Doors open at 17:45.</span></p>
-    <p>仪式于 <span class="hl">18:00</span> 正式开始。<br><span style="color:var(--muted);font-size:0.8rem">The ceremony begins at 18:00.</span></p>
+    <p>请准时到达，会场大门将于 <span class="hl">16:50</span> 开放。<br><span style="color:var(--muted);font-size:0.8rem">Please arrive on time. Doors open at 16:50.</span></p>
+    <p>仪式于 <span class="hl">17:00</span> 正式开始。<br><span style="color:var(--muted);font-size:0.8rem">The ceremony begins at 17:00.</span></p>
     <div class="divider"></div>
     <p style="text-align:center;color:var(--muted);font-size:0.85rem">
       期待与您共同见证这一美好时刻<br>
@@ -434,7 +434,7 @@ const obs=new IntersectionObserver(es=>{
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
 function tick(){
-  const w=new Date('2026-06-06T18:00:00+08:00'),n=new Date(),d=w-n;
+  const w=new Date('2026-06-06T17:00:00+08:00'),n=new Date(),d=w-n;
   if(d<=0)return;
   document.getElementById('days').textContent=Math.floor(d/864e5);
   document.getElementById('hours').textContent=Math.floor(d%864e5/36e5);
